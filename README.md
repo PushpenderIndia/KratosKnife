@@ -32,34 +32,27 @@ THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. YOU MAY USE THIS
 
 ## Commands Available In Attacker/Admin Panel
 
-| **Clients Command**        | **Location**                | **Stealer**                  |
-|----------------------------|-----------------------------|------------------------------|
-| 1.	Ping 	                 | 1. Get Location Information | 1. Steal Firefox Cookie      |
-| 2.	Upload & Execute File  | 2. Show Location On Map     | 2. Steal Chrome Cookie       |
-| 3.	Show MessageBox        | **Computer Commands**       | 3. Steal Bitcoin Wallet      |
-| 4.	Take Screenshot        | 1. Shutdown                 | 4. Steal WiFI Saved Password |
-| 5.	Installed Software     | 2. Restart                  | **Computer Commands**        |
-| 6.	Execute Scripts  	   	 | 3. Logoff	                 | 1. Shutdown                  |
-| 7.	Elevate User Status    | **Open Webpage**            | 2. Restart                   |
-| 8.	Clear TEMP Folder      | 1. Open Webpage (Visible)   | 3. Logoff                    |
+| **Clients Command**        | **Location**                | **Stealer**                                |
+|----------------------------|-----------------------------|--------------------------------------------|
+| 1.	Ping 	                 | 1. Get Location Information | 1. Steal Firefox Cookie                    |
+| 2.	Upload & Execute File  | 2. Show Location On Map     | 2. Steal Chrome Cookie                     |
+| 3.	Show MessageBox        | **Computer Commands**       | 3. Steal Bitcoin Wallet                    |
+| 4.	Take Screenshot        | 1. Shutdown                 | 4. Steal WiFI Saved Password               |
+| 5.	Installed Software     | 2. Restart                  | **Keylogger**                              |
+| 6.	Execute Scripts  	   	 | 3. Logoff	                 | 1. Start Keylogger [**Under Development**] |
+| 7.	Elevate User Status    | **Open Webpage**            | 2. Stop Keylogger  [**Under Development**] |
+| 8.	Clear TEMP Folder      | 1. Open Webpage (Visible)   | 3. Retrive Logs    [**Under Development**] |
 
 
-| **Clients Commands**                        |
-|---------------------------------------------|
-| 1. Close Connection                         |
-| 2. Move Client      [**Under Development**] |
+| **Clients Commands**                        | **DDOS Attack**                    |                           
+|---------------------------------------------|------------------------------------|
+| 1. Close Connection                         | Start DDOS [**Under Development**] |
+| 2. Move Client      [**Under Development**] | Stop DDOS  [**Under Development**] |
 | 3. Blacklist IP	    [**Under Development**] |
 | 4. Update Client	  [**Under Development**] |
 | 5. Restart Client	  [**Under Development**] |
 | 6. Uninstall	      [**Under Development**] |
-
-
-| **DDOS Attack**                    | **Keylogger**                           |
-|------------------------------------|-----------------------------------------|
-| Start DDOS [**Under Development**] | Start Keylogger [**Under Development**] |
-| Stop DDOS  [**Under Development**] | Stop Keylogger  [**Under Development**] |
-|                                    | Retrive Logs    [**Under Development**] |
-
+                              
 ## Generator Features
 - [x] Encrypt Source Code Using AES 256 Bit Encryption 
 - [x] Encrypt Source Code Using Base64 Encryption
@@ -93,6 +86,21 @@ THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. YOU MAY USE THIS
 - [x] Python 3.X
 - [x] Few External Modules
 
+## Server Setup
+
+1. Upload & Unzip `panel.zip` on your hosting available in this repo 
+2. Create a database with any name you want
+3. Change the data in classes/Database.php
+4. Change files and folders permission to 777 [**Uploads Folder, Scripts Folder**]
+5. Go to `install.php` to create the botnet tables automatically
+
+* [**For Testing Locally**]
+
+1. Install XAMPP, & Put panel files inside htdocs folder and Run Apache & MySQL Service In XAMPP Controller
+2. Create a database with any name you want
+3. Change the data in classes/Database.php
+4. Go to `install.php` to create the botnet tables automatically
+
 ## Usage
 ```bash
 # Install dependencies 
@@ -106,10 +114,6 @@ $ cd KratosKnife/Botnet-Generator
 
 # Installing dependencies
 $ python -m pip install -r requirements.txt
-
-# Upload & Unzip panel.zip on server
-# OR
-# Install XAMPP, & Put panel files inside htdocs folder  [For Testing Locally]
 
 # Getting Help Menu
 $ python Generator.py --help
