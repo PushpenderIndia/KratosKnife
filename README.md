@@ -107,6 +107,10 @@ $ cd KratosKnife/Botnet-Generator
 # Installing dependencies
 $ python -m pip install -r requirements.txt
 
+# Upload & Unzip panel.zip on server
+# OR
+# Install XAMPP, & Put panel files inside htdocs folder  [For Testing Locally]
+
 # Getting Help Menu
 $ python Generator.py --help
 
