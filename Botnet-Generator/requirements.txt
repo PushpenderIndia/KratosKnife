@@ -1,0 +1,5 @@
+pycryptodome
+requests
+mss==4.0.3
+PyInstaller
+pywin32
