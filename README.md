@@ -128,7 +128,7 @@ $ python Generator.py -s localhost/panel -o output_file_name --icon icon/exe.ico
 |                    | --interactive                   | Takes Input by asking Questions                                             |
 |                    | --icon ICON                     | Specify Icon Path, Icon of Evil File [**Note : Must Be .ico**]              |
 | -i INTERVAL        | --interval INTERVAL             | Time between reports in seconds. default=12.       [**Under Development**]  |
-| -t TIME_PERSISTENT | --persistence TIME_PERSISTENT   | Becoming Persistence After __ seconds. default=10  [**Under Development**]  |
+| -t TIME_PERSISTENT | --persistence TIME_PERSISTENT   | Becoming Persistence After __ seconds. default=10                           |
 | -b file.txt        | --bind LEGITIMATE_FILE_PATH.pdf | Built-In Binder : Specify Path of Legitimate file. [**Under Development**]  |
 
 * Required Arguments
