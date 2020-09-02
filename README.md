@@ -172,7 +172,7 @@ singhpushpender250@gmail.com
 ## Buy Me A Coffee
 
 * Support my Open Source projects by making Donation, It really motivates me to work on more projects
-* PayPal Email: shrisatender@gmail.com [Please Don't Send Emails to This Address]
+* PayPal Email: `shrisatender@gmail.com` [**Please Don't Send Emails to This Address**]
 
 
 ## More Features Coming Soon...
