@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Technowlogy-Pushpender/KratosKnife/blob/master/img/banner.png" alt="KratosKnife Logo" width=265 height=243/>
+  <img src="https://github.com/PushpenderIndia/KratosKnife/blob/master/img/banner.png" alt="KratosKnife Logo" width=265 height=243/>
 </p>
 
 <h1 align="center">KratosKnife</h1>
@@ -7,13 +7,13 @@
     <a href="https://python.org">
     <img src="https://img.shields.io/badge/Python-3.7-green.svg">
   </a>
-  <a href="https://github.com/Technowlogy-Pushpender/KratosKnife/blob/master/LICENSE">
+  <a href="https://github.com/PushpenderIndia/KratosKnife/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-BSD%203-lightgrey.svg">
   </a>
-  <a href="https://github.com/Technowlogy-Pushpender/KratosKnife/releases">
+  <a href="https://github.com/PushpenderIndia/KratosKnife/releases">
     <img src="https://img.shields.io/badge/Release-1.0-blue.svg">
   </a>
-    <a href="https://github.com/Technowlogy-Pushpender/KratosKnife">
+    <a href="https://github.com/PushpenderIndia/KratosKnife">
     <img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-brightgreen.svg">
   </a>
 </p>
@@ -107,7 +107,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. YOU MAY USE THIS
 $ Install latest python 3.x
 
 # Clone this repository
-$ git clone https://github.com/Technowlogy-Pushpender/KratosKnife.git
+$ git clone https://github.com/PushpenderIndia/KratosKnife.git
 
 # Go into the repository
 $ cd KratosKnife/Botnet-Generator
@@ -169,10 +169,10 @@ $ python Generator.py -s localhost/panel -o output_file_name --icon icon/exe.ico
 
 singhpushpender250@gmail.com 
 
-## Believes In Donation ?
+## Buy Me A Coffee
 
-- [ ] paypal me, Even 1 dollar of donation would be a great help :)
-- [ ] paypal Address: <a href="https://paypal.me/anonyindia">https://paypal.me/anonyindia</a>
-- [ ] paypal Email Address: singhpushpender250@gmail.com
+* Support my Open Source projects by making Donation, It really motivates me to work on more projects
+* PayPal Email: shrisatender@gmail.com [Please Don't Send Emails to This Address]
+
 
 ## More Features Coming Soon...
