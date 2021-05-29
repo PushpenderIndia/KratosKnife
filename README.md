@@ -115,6 +115,8 @@ $ cd KratosKnife/Botnet-Generator
 # Installing dependencies
 $ python -m pip install -r requirements.txt
 
+# Update pyinstaller.exe path, in Generator.py (line 9) 
+
 # Getting Help Menu
 $ python Generator.py --help
 
