@@ -55,7 +55,7 @@ THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. YOU MAY USE THIS
                               
 ## Generator Features
 - [x] Encrypt Source Code Using AES 256 Bit Encryption 
-- [x] Encrypt Source Code Using Base64 Encryption
+- [x] Encrypt Source Code Using Base64 Encoding
 - [x] Packing Evil Exe Using UPX Packer
 - [x] Interactive Mode [**Generator Ask Required Parameter**] 
 - [x] Debug Mode [**Can Be Used In Debugging Payload**]
@@ -166,9 +166,5 @@ $ python Generator.py -s localhost/panel -o output_file_name --icon icon/exe.ico
 
 - [ ] Add New features
 - [ ] Add GUI BOTNET Generator
-
-## Contact
-
-singhpushpender250@gmail.com 
 
 ## More Features Coming Soon...
