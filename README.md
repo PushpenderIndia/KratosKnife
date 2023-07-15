@@ -158,10 +158,6 @@ $ python Generator.py -s localhost/panel -o output_file_name --icon icon/exe.ico
    * Restart Infected PC to stop the current Running Evil File.
    * Run "RemoveBOTNET.bat" again.
 
-## Contributors
-
-* Panel Files are contributed by [BlackHacker511](https://github.com/BlackHacker511)
-
 ## TODO
 
 - [ ] Add New features
